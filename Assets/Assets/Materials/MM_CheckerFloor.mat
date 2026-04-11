@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MM_CheckerFloor
+  m_Shader: {fileID: 4800000, guid: 58a3f32f9dd4565488a049558b0f9bbd, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _CausticScale: 12
+    - _CausticSpeed: 0.18
+    - _CausticStrength: 0.22
+    - _DispAmp: 0.28
+    - _FadeEnd: 70
+    - _FadeStart: 20
+    - _FillStrength: 0.35
+    - _FresnelPow: 1.5
+    - _ReflBlend: 0.55
+    - _ReflStrength: 0.358
+    - _RippleScale: 6
+    - _RippleSpeed: 3
+    - _RippleStrength: 1
+    - _SkyHorizon: 0.618
+    - _Smoothness: 0.194
+    - _SpecStrength: 5.5
+    - _TileSize: 0.7
+    - _WaterAlpha: 0.237
+    - _WaveAmp: 1
+    - _WaveHeight: 0.04
+    - _WaveScale: 2.8
+    - _WaveScale2: 5.5
+    - _WaveScaleA: 0.55
+    - _WaveScaleB: 1.4
+    - _WaveScaleC: 3.2
+    - _WaveSpeed: 0.55
+    m_Colors:
+    - _DarkColor: {r: 0.03, g: 0.02, b: 0.1, a: 1}
+    - _DeepColor: {r: 0.04, g: 0.1, b: 0.22, a: 1}
+    - _HorizonColor: {r: 0.14, g: 0.08, b: 0.28, a: 1}
+    - _LightColor: {r: 0.75, g: 0.75, b: 0.92, a: 1}
+    - _LightColor0: {r: 0.95, g: 0.82, b: 1, a: 1}
+    - _LightColor1: {r: 0.29999998, g: 0.54999995, b: 0.85, a: 1}
+    - _LightDir: {r: -0.42, g: 0.75, b: 0.51, a: 0}
+    - _LightDir0: {r: -0.42, g: 0.75, b: 0.51, a: 0}
+    - _LightDir1: {r: 0.7, g: 0.4, b: -0.3, a: 0}
+    - _ShallowColor: {r: 0.15, g: 0.35, b: 0.55, a: 1}
+    - _SkyBottom: {r: 0.78, g: 0.06, b: 0.5, a: 1}
+    - _SkyHigh: {r: 0.19999996, g: 0.049999982, b: 0.54999995, a: 1}
+    - _SkyLow: {r: 0.75, g: 0.079999976, b: 0.45, a: 1}
+    - _SkyMid: {r: 0.44, g: 0.04, b: 0.6, a: 1}
+    - _SkyTop: {r: 0.04, g: 0, b: 0.14, a: 1}
+    - _WaterColor: {r: 0.08, g: 0.25, b: 0.5, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

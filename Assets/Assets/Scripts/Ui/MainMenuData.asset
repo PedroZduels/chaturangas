@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cfb13e52b72117439d2a3a93a63fbeb, type: 3}
+  m_Name: MainMenuData
+  m_EditorClassIdentifier: Assembly-CSharp::MainMenuData
+  gameTitle: CHATURANGA
+  startRunLabel: Start Run
+  infoLabel: Info
+  optionsLabel: Options
+  exitLabel: Exit
+  infoTitle: How to Play
+  pieceSheet:
+  - {fileID: -5619150752979459227, guid: 6603f81f61c69b547b2a0b5cde0d8619, type: 3}
+  - {fileID: -5619150752979459227, guid: 6603f81f61c69b547b2a0b5cde0d8619, type: 3}
+  - {fileID: -5619150752979459227, guid: 6603f81f61c69b547b2a0b5cde0d8619, type: 3}
+  - {fileID: -5619150752979459227, guid: 6603f81f61c69b547b2a0b5cde0d8619, type: 3}
+  - {fileID: -5619150752979459227, guid: 6603f81f61c69b547b2a0b5cde0d8619, type: 3}
+  - {fileID: -5619150752979459227, guid: 6603f81f61c69b547b2a0b5cde0d8619, type: 3}
+  overviewText: Chaturanga is a roguelike tactical chess game. Each run you select
+    and command a squad of chess pieces through escalating fights. After three fights
+    you can enter the MainFrame code and buy pieces, relics and floppies; you can
+    also upgrade your existing pieces. Defeat the enemy squad to win a fight.
+  runStructureText: "A run follows a repeating cycle:\n\nFIGHT \u2014 Face an enemy
+    squad on a chess board. You and the AI alternate turns. Eliminate all enemy pieces
+    to win. Your pieces carry over to the next fight.\n\nVICTORY REWARD \u2014 You
+    get Bits for winning, bits for time not spent and bits for alive pieces.\n\nMAINFRAME
+    MARKET \u2014 Spend Bits to buy stuff. The market re-rolls its selection every
+    time you visit.\n\nYou may upgrade as many types as you can afford before entering
+    the next fight.\n\nManaging your Bits wisely is the key to surviving deeper into
+    a run."
+  pieces:
+  - pieceName: Pawn
+    sprite: {fileID: 21300000, guid: 13917c55ada907d44b4c4a8dda213674, type: 3}
+    accentColor: {r: 0.4, g: 0.8, b: 0.55, a: 1}
+    moveText: Moves forward one square. Captures diagonally forward.
+    upgradeText: "Double Step \u2014 can advance two squares from any rank as long
+      as both squares ahead are empty."
+  - pieceName: Rook
+    sprite: {fileID: 21300000, guid: 982b3665c89c50a4d9d1f71eb37731da, type: 3}
+    accentColor: {r: 0.35, g: 0.65, b: 0.95, a: 1}
+    moveText: Slides any number of squares along ranks or files (horizontal or vertical).
+    upgradeText: "Phase Charge \u2014 phases straight through enemy Pawns without
+      capturing them, continuing its slide."
+  - pieceName: Knight
+    sprite: {fileID: 21300000, guid: 0e8adb60126a21b48b0d3f05ec315ff6, type: 3}
+    accentColor: {r: 0.75, g: 0.5, b: 0.95, a: 1}
+    moveText: 'Leaps in an L-shape (2 squares + 1 to the side). Jumps over all other
+      pieces. '
+    upgradeText: "Extended Leap \u2014 gains an additional (3+1) leap range on top
+      of its normal moves."
+  - pieceName: Bishop
+    sprite: {fileID: 21300000, guid: db977a39575d41944b1a4a4a8fb27454, type: 3}
+    accentColor: {r: 0.95, g: 0.8, b: 0.3, a: 1}
+    moveText: Slides diagonally any number of squares. Stays on its starting color.
+    upgradeText: "Cross-step \u2014 after completing a diagonal slide it may take
+      one additional step in a cardinal direction."
+  - pieceName: Queen
+    sprite: {fileID: 21300000, guid: a4c98690244894c47b237081190b1824, type: 3}
+    accentColor: {r: 0.95, g: 0.45, b: 0.7, a: 1}
+    moveText: Slides any number of squares in all 8 directions. The most powerful
+      piece on the board.
+    upgradeText: "Compound Strike \u2014 after capturing an enemy piece the Queen
+      retreats one step back along the same attack ray."
+  - pieceName: King
+    sprite: {fileID: 21300000, guid: 5b569ebf269b79b40b5a8aca9fd9ced5, type: 3}
+    accentColor: {r: 0.95, g: 0.6, b: 0.25, a: 1}
+    moveText: Moves one square in any direction. If your King is captured, the run
+      ends immediately.
+    upgradeText: "Armor Guard \u2014 at the start of each player turn the King grants
+      1 Armor to the three pieces directly in front of it."
+  armorText: "A piece with Armor absorbs one fatal hit instead of dying.\nWhen the
+    Armor is lost the piece survives but is Stunned \u2014 you cant move it next
+    turn.\nKnights always pierce Armor and deal damage directly to the piece beneath.\nArmor
+    is shown by a shield icon above the pieces."
+  suddenDeathText: "Triggers when neither side can make progress \u2014 either a
+    1v1 stand-off or too many consecutive rounds with no capture.\n\nEach Sudden
+    Death round, one edge strip of tiles is highlighted red. After the AI completes
+    its turn, that strip collapses: every piece on it is destroyed and those tiles
+    are permanently removed from play.\n\nCollapse order: left column \u2192 bottom
+    row \u2192 right column \u2192 top row \u2192 repeat inward.\n\nSudden Death
+    forces a decisive result \u2014 there are no draws in Chaturanga."
+  floppyIntroText: "Floppies are single-use abilities you activate during a fight.
+    Each one has an immediate effect \u2014 stun an enemy, armor a piece, move again
+    \u2014 and is consumed once used.\n\nYou collect floppies in two ways: Random
+    free reward after each victory, or buying them from the Mainframe Market between
+    fights."
+  floppies:
+  - floppyName: Armor
+    cost: 3
+    icon: {fileID: 21300000, guid: d81924d4fe26fd74f97044a7be54a4be, type: 3}
+    description: Apply 1 Armor stack to a friendly piece. That piece will survive
+      its next lethal hit and be Stunned instead of dying. Has no effect if the piece
+      already has Armor.
+  - floppyName: Retreat
+    cost: 2
+    icon: {fileID: 21300000, guid: d81924d4fe26fd74f97044a7be54a4be, type: 3}
+    description: Move a friendly piece one square toward your back rank (downward).
+      Useful to pull a threatened piece out of danger. Does nothing if the square
+      behind is occupied or out of bounds.
+  - floppyName: Stun
+    cost: 3
+    icon: {fileID: 21300000, guid: d81924d4fe26fd74f97044a7be54a4be, type: 3}
+    description: Stun an enemy piece for one turn. It will skip its move entirely
+      during the next AI turn. Combine with Hack for a guaranteed lost turn.
+  - floppyName: Upgrade
+    cost: 4
+    icon: {fileID: 21300000, guid: d81924d4fe26fd74f97044a7be54a4be, type: 3}
+    description: Temporarily upgrade a friendly piece for the duration of this fight
+      only. The upgrade is lost when the fight ends. Cannot be used on a piece that
+      is already upgraded.
+  - floppyName: Hack
+    cost: 4
+    icon: {fileID: 21300000, guid: d81924d4fe26fd74f97044a7be54a4be, type: 3}
+    description: "Hack an enemy piece. On the next AI turn that piece is the only
+      one that can move \u2014 the rest of the enemy squad is locked. If the hacked
+      piece is also stunned the AI loses its turn entirely."
+  - floppyName: Ethereal
+    cost: 3
+    icon: {fileID: 21300000, guid: d81924d4fe26fd74f97044a7be54a4be, type: 3}
+    description: Make a friendly piece ethereal for one turn. It can move through
+      friendly pieces as if they were not there, opening otherwise blocked paths.
+      The effect expires at the end of the turn.
+  - floppyName: Morph
+    cost: 5
+    icon: {fileID: 21300000, guid: d81924d4fe26fd74f97044a7be54a4be, type: 3}
+    description: Temporarily transform a friendly piece into a Queen for one full
+      turn. The original piece is hidden and restored at the start of the next player
+      turn. The queen inherits the piece's Armor and upgrade state.
+  - floppyName: Dismantle
+    cost: 0
+    icon: {fileID: 21300000, guid: d81924d4fe26fd74f97044a7be54a4be, type: 3}
+    description: Sacrifice a friendly piece to earn 10 Bits immediately. The piece
+      is removed from the board permanently. Useful for converting a weak or stranded
+      piece into economy.
+  - floppyName: Ctrl+Z
+    cost: 3
+    icon: {fileID: 21300000, guid: d81924d4fe26fd74f97044a7be54a4be, type: 3}
+    description: "Revert the board to the state from two half-turns ago \u2014 undoing
+      both the AI's last move and your own previous turn. A confirm dialog appears
+      before the revert executes. Cannot be used if there is no history to revert
+      to."
+  - floppyName: Wall
+    cost: 3
+    icon: {fileID: 21300000, guid: d81924d4fe26fd74f97044a7be54a4be, type: 3}
+    description: "Select up to 3 connected empty tiles to wall off. During the next
+      AI turn those tiles are blocked \u2014 enemy pieces cannot move onto or through
+      them. The wall is shown as a red danger highlight and is removed after the
+      AI moves."
+  discIntroText: "Discs are permanent items you carry for the entire run. Unlike
+    floppies they are never consumed \u2014 once you have a disc its effect is always
+    active. Discs are found in the Mainframe Market and earned in random events ir
+    killing Chess Masters."
+  discs: []
+  infoBackLabel: Back
+  optionsBackLabel: Back

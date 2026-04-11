@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ddb951742bc7c145bb742dc80218880, type: 3}
+  m_Name: Enemy Level 7
+  m_EditorClassIdentifier: Assembly-CSharp::SquadDefinition
+  squadName: Enemy Level 7
+  description: 2 Pawns and a King
+  pieces:
+  - piecePrefab: {fileID: 8210575761673724007, guid: 6cdd2eeba2fee37439c90166fe10b447, type: 3}
+    startPosition: {x: 2, y: 4}
+    isUpgraded: 0
+    startingArmor: 1
+  - piecePrefab: {fileID: 8210575761673724007, guid: d5612a93cdfe3384f95d29638736b95d, type: 3}
+    startPosition: {x: 1, y: 3}
+    isUpgraded: 1
+    startingArmor: 0
+  - piecePrefab: {fileID: 8210575761673724007, guid: d5612a93cdfe3384f95d29638736b95d, type: 3}
+    startPosition: {x: 2, y: 3}
+    isUpgraded: 1
+    startingArmor: 0
+  - piecePrefab: {fileID: 8210575761673724007, guid: d5612a93cdfe3384f95d29638736b95d, type: 3}
+    startPosition: {x: 3, y: 3}
+    isUpgraded: 1
+    startingArmor: 0
+  - piecePrefab: {fileID: 8210575761673724007, guid: 8c93242607b6f8543bdc3729f3e7b5b3, type: 3}
+    startPosition: {x: 4, y: 4}
+    isUpgraded: 1
+    startingArmor: 0
+  bossEffect: {fileID: 11400000, guid: 31a0047aed261b84f984f8aec9035a22, type: 2}
