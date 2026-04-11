@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Game
+    uniqueID: 328160573
+    locked: 0
+  - name: Market
+    uniqueID: 1003452153
+    locked: 0
+  - name: Background
+    uniqueID: 1199531943
+    locked: 0
+  - name: Screenoverlay
+    uniqueID: 2028639319
+    locked: 0
+  - name: Scanlines
+    uniqueID: 3280613271
+    locked: 0
+  - name: HUD
+    uniqueID: 3471482915
+    locked: 0
+  - name: Overlay
+    uniqueID: 3639930535
+    locked: 0
+  m_RenderingLayers:
+  - Default
+  m_MigratedRenderPipelines: []
